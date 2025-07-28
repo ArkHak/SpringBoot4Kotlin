@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package o.mysin.spring_boot_kotlin_test
-=======
-package com.o.mysin.spring_boot_basic_kotlin
->>>>>>> master
 
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.DeleteMapping
@@ -15,13 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.server.ResponseStatusException
-<<<<<<< HEAD
-import kotlin.collections.filter
-import kotlin.collections.find
-import kotlin.collections.indexOfFirst
-import kotlin.text.contains
-=======
->>>>>>> master
+
 
 @RestController
 @RequestMapping("/quotes")
