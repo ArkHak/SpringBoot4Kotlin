@@ -1,0 +1,25 @@
+# IDE-related files
+.idea/
+*.iml
+*.iws
+.classpath
+.project
+
+# Maven
+target/
+.mvn/
+
+# Java class files
+*.class
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.swp
+*~
+.DS_Store
+
+# Other
+.settings/
