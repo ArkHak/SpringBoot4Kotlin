@@ -1,6 +1,8 @@
 package o.mysin.spring_boot_kotlin_test
 
+import o.mysin.spring_boot_kotlin_test.exception.QuoteNotFoundException
 import org.springframework.http.HttpStatus
+import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -60,8 +62,14 @@ class QuoteController {
 
         if (quoteToDelete != null) {
             quotes.remove(quoteToDelete)
+//            ResponseEntity
+//                .status(HttpStatus.OK)
+//                .ok()
+//                .build()
         } else {
-            throw ResponseStatusException(HttpStatus.NOT_FOUND)
+//            ResponseEntity
+//                .status(HttpStatus.NOT_FOUND).build()
+            throw QuoteNotFoundException(id)
         }
     }
 
